@@ -60,13 +60,26 @@ Run the script:
 python data/data_download.py
 ```
 
-## Model training and validation
+## Models training and validation
 
 Run the script:
 
 ```bash
 python model.py
 ```
+
+## Model Ranking Results
+**135 combinations tested** — 9 preprocessors × 15 models, evaluated with 5-fold CV + held-out test set.
+
+### 🥇 Best Combination
+
+| Property | Value |
+|---|---|
+| **Preprocessor** | None (passthrough) |
+| **Model** | SVM — linear kernel |
+| **Test Accuracy** | `0.9810` |
+| **Test F1 (weighted)** | `0.9809` |
+| **CV Mean ± Std** | `0.9556 ± 0.0544` |
 
 ## License
 
